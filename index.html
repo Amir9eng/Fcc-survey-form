@@ -4,9 +4,10 @@
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>survey form</title>
 </head>
 <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
  <div class="container">
      <header class="header">
          <h1 id="title" class="text-center">Jamb Application Form</h1>
@@ -14,7 +15,6 @@
 
          </p>
      </header>
-     <div class="form-wrapper">
         <form id="survey-form">
             <div class="form-group">
                 <label id="name-label" for="name">Name</label> <br>
@@ -28,10 +28,10 @@
             </div>
             <div class="form-group">
                <label id="email-label" for="email">Email</label> <br>
-               <input type="text"
+               <input type="email"
                name="email"
                id="email"
-               class="form-control"
+               
                placeholder="Enter your email"
                required
                />
@@ -49,10 +49,10 @@
                required/>
            </div>
            <div class="form-group">
-               <p>Which year did you participate in the exam?</p>
+            <span>Which year did you participate in the exam? </span> <br>
               <select id="dropdown" name="year"
               class="form-control" required>
-            <option disabled selected value>Select current year</option>
+            <option disabled selected hidden>Select current year</option>
             <option value="WAEC 2019"> 2019</option>
             <option value="WAEC 2018">2018</option>
             <option value="WAEC 2017">2017</option>
@@ -62,29 +62,36 @@
             <option value="other">Other</option>
             </select>
            </div>
-           <div class="form-group">
-               <p>Would you like to rewrite the exam?</p>
-               <label>
-                   <input
-                   name="user-rewrite"
-                   value="definitely"
-                   type="radio"
-                   class="input-radio"
-                   checked/>Definitely</label>
-                   <label>
-                    <input
-                    name="user-rewrite"
-                    value="maybe"
-                    type="radio"
-                    class="input-radio"
-                    checked/>Maybe</label>
-                    <label>
+           <div class="form-group flex flex-col justify-center ">
+            <span>Would you like to rewrite the exam? </span>
+            <div class="radio1 flex align-center">
+
+                <input
+                name="user-rewrite"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                />Definitely
+            </div>
+                   <div class="radio1 flex align-center">
+
+                       <input
+                       name="user-rewrite"
+                       value="maybe"
+                       type="radio"
+                       class="input-radio"
+                       />Maybe
+                    </div>
+                    <div class="radio1 flex align-center">
+
                         <input
                         name="user-rewrite"
                         value="no"
                         type="radio"
                         class="input-radio"
-                        checked/>No</label>
+                        />No
+                    </div>
+
                         <p>Which month would you like to write your exam?</p>
                         <select id="month" name="month"
                         class="form-control" required><option disabled selected value>Select an option</option>
@@ -93,36 +100,36 @@
                         <option value="august">AUGUST</option>
                         </select>
                        <p>Which Instituitions would you like to apply for?<span class="clue">(Check all if you want)</span></p>
-                       <label>
+                    
                             <input
                        name="prefer"
                        value="university"
                        type="checkbox"
-                       class="input-checkbox"/>University</label>
-                       <label>
+                       class="input-checkbox"/>University
+                    
                             <input
                        name="prefer"
                        value="polytechnic"
                        type="checkbox"
-                       class="input-checkbox"/>Polytechnic</label>
-                       <label>
+                       class="input-checkbox"/>Polytechnic
+                    
                            <input
                        name="prefer"
                        value="monotechnic"
                        type="checkbox"
-                       class="input-checkbox"/>Monotechnic</label>
-                       <label> 
+                       class="input-checkbox"/>Monotechnic
+                     
                            <input
                        name="prefer"
                        value="colleges"
                        type="checkbox"
-                       class="input-checkbox"/>Colleges</label>
-                       <label>
+                       class="input-checkbox"/>Colleges
+                    
                            <input
                        name="prefer"
                        value="technology-school"
                        type="checkbox"
-                       class="input-checkbox"/>Technology School</label>
+                       class="input-checkbox"/>Technology School
                        </div>
                     <div class="form-group">
                         <p>Any comments or suggestions?</p>
@@ -140,7 +147,7 @@
                         </button>
                     </div>
         </form>
-     </div>
+     
  </div>   
 </body>
 </html>
