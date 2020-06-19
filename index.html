@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div class="container">
+     <header class="header">
+         <h1 id="title" class="text-center">Jamb Application Form</h1>
+         <p id="description" class="description text-center"> You are advised to create an account with a valid email address because all vital information will be sent to the email you supplied 
+
+         </p>
+     </header>
+     <div class="form-wrapper">
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label> <br>
+                <input type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+                />
+            </div>
+            <div class="form-group">
+               <label id="email-label" for="email">Email</label> <br>
+               <input type="text"
+               name="email"
+               id="email"
+               class="form-control"
+               placeholder="Enter your email"
+               required
+               />
+           </div>
+           <div class="form-group">
+               <label id="number-label" for="number">Age<span class="clue">(optional)</span></label> <br>
+               <input type="number"
+               name="Age"
+               id="number"
+               min="10"
+               max="99"
+               step="2"
+               class="form-control"
+               placeholder="Age"
+               required/>
+           </div>
+           <div class="form-group">
+               <p>Which year did you participate in the exam?</p>
+              <select id="dropdown" name="year"
+              class="form-control" required>
+            <option disabled selected value>Select current year</option>
+            <option value="WAEC 2019"> 2019</option>
+            <option value="WAEC 2018">2018</option>
+            <option value="WAEC 2017">2017</option>
+            <option value="WAEC 2016">2016</option>
+            <option value="WAEC 2015">2015</option>
+            <option value="preferno">Prefer not to say</option>
+            <option value="other">Other</option>
+            </select>
+           </div>
+           <div class="form-group">
+               <p>Would you like to rewrite the exam?</p>
+               <label>
+                   <input
+                   name="user-rewrite"
+                   value="definitely"
+                   type="radio"
+                   class="input-radio"
+                   checked/>Definitely</label>
+                   <label>
+                    <input
+                    name="user-rewrite"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                    checked/>Maybe</label>
+                    <label>
+                        <input
+                        name="user-rewrite"
+                        value="no"
+                        type="radio"
+                        class="input-radio"
+                        checked/>No</label>
+                        <p>Which month would you like to write your exam?</p>
+                        <select id="month" name="month"
+                        class="form-control" required><option disabled selected value>Select an option</option>
+                        <option value="june">JUNE</option>
+                        <option value="july">JULY</option>
+                        <option value="august">AUGUST</option>
+                        </select>
+                       <p>Which Instituitions would you like to apply for?<span class="clue">(Check all if you want)</span></p>
+                       <label>
+                            <input
+                       name="prefer"
+                       value="university"
+                       type="checkbox"
+                       class="input-checkbox"/>University</label>
+                       <label>
+                            <input
+                       name="prefer"
+                       value="polytechnic"
+                       type="checkbox"
+                       class="input-checkbox"/>Polytechnic</label>
+                       <label>
+                           <input
+                       name="prefer"
+                       value="monotechnic"
+                       type="checkbox"
+                       class="input-checkbox"/>Monotechnic</label>
+                       <label> 
+                           <input
+                       name="prefer"
+                       value="colleges"
+                       type="checkbox"
+                       class="input-checkbox"/>Colleges</label>
+                       <label>
+                           <input
+                       name="prefer"
+                       value="technology-school"
+                       type="checkbox"
+                       class="input-checkbox"/>Technology School</label>
+                       </div>
+                    <div class="form-group">
+                        <p>Any comments or suggestions?</p>
+                        <textarea 
+                        cols="40px"
+                        rows="7px"
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your text here..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">Submit
+
+                        </button>
+                    </div>
+        </form>
+     </div>
+ </div>   
+</body>
+</html>
