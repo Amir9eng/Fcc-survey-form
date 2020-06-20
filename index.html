@@ -31,7 +31,7 @@
                <input type="email"
                name="email"
                id="email"
-               
+               class="form-control"
                placeholder="Enter your email"
                required
                />
@@ -49,7 +49,7 @@
                required/>
            </div>
            <div class="form-group">
-            <span>Which year did you participate in the exam? </span> <br>
+            <p>Which year did you participate in the exam? </p> 
               <select id="dropdown" name="year"
               class="form-control" required>
             <option disabled selected hidden>Select current year</option>
@@ -63,7 +63,7 @@
             </select>
            </div>
            <div class="form-group flex flex-col justify-center ">
-            <span>Would you like to rewrite the exam? </span>
+           <p>Would you like to rewrite the exam?</p> 
             <div class="radio1 flex align-center">
 
                 <input
@@ -92,39 +92,40 @@
                         />No
                     </div>
 
-                        <p>Which month would you like to write your exam?</p>
+                        <p class="comment">Which month would you like to write your exam?</p>
                         <select id="month" name="month"
                         class="form-control" required><option disabled selected value>Select an option</option>
                         <option value="june">JUNE</option>
                         <option value="july">JULY</option>
                         <option value="august">AUGUST</option>
                         </select>
-                       <p>Which Instituitions would you like to apply for?<span class="clue">(Check all if you want)</span></p>
-                    
+                       <p class="comment">Which Instituitions would you like to apply for?<span class="clue">(Check all if you want)</span></p>
+                       <div class="radio1 flex align-center">
                             <input
                        name="prefer"
                        value="university"
                        type="checkbox"
                        class="input-checkbox"/>University
-                    
+                       </div>
+                       <div class="form-group">
                             <input
                        name="prefer"
                        value="polytechnic"
                        type="checkbox"
-                       class="input-checkbox"/>Polytechnic
-                    
+                       class="input-checkbox"/>Polytechnic</div>
+                       <div class="form-group">
                            <input
                        name="prefer"
                        value="monotechnic"
                        type="checkbox"
-                       class="input-checkbox"/>Monotechnic
-                     
+                       class="input-checkbox"/>Monotechnic</div>
+                       <div class="form-group">
                            <input
                        name="prefer"
                        value="colleges"
                        type="checkbox"
                        class="input-checkbox"/>Colleges
-                    
+                       <div class="form-group">
                            <input
                        name="prefer"
                        value="technology-school"
@@ -132,10 +133,10 @@
                        class="input-checkbox"/>Technology School
                        </div>
                     <div class="form-group">
-                        <p>Any comments or suggestions?</p>
+                        <p class="comment">Any comments or suggestions?</p>
                         <textarea 
-                        cols="40px"
-                        rows="7px"
+                        cols="50"
+                        rows="7"
                         id="comments"
                         class="input-textarea"
                         name="comment"

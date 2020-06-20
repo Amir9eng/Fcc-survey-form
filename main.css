@@ -32,8 +32,14 @@ h1{
     line-height: 1.2;
     text-align: center;
 }
+label{
+    font-size: 1.25rem;
+    padding-top: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 p{
-    margin-top:0;
+    margin-top: 5px;
     font-size: 1.25rem;
     
 }
@@ -71,7 +77,7 @@ form{
     .container{
         max-width: 540px;
     }
-    .description{
+    #description{
         font-style: italic;
         font-weight: 400;
         text-shadow: 1px 1px 1px rgba(0,00,0.4);
@@ -103,6 +109,35 @@ form{
       margin-right: .5rem;
       
   }
+  input[type="checkbox"]{
+    width:20px;
+    height:20px;
+    margin-right: .5rem;
+
+  }
   .radio1{
       margin-bottom: .3rem;
   }
+
+  .submit-button {
+      padding: 8px 22px;
+      background: var(--color-green);
+      border: none;
+      color: white;
+      border-radius: 5px;
+  }
+
+  .submit-button:hover {
+      background-color: #ffffff;
+      color: #000;
+      cursor: pointer;
+  }
+
+  .submit-button:focus {
+      outline: none;
+  }
+  .comment{
+      margin-top: .3rem;
+  }
+ 
+  /*  */
