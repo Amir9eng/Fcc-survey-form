@@ -70,7 +70,32 @@ form{
     width: fit-content;
     border-radius: 7px;
 }
+input[type="email"]{
+    width:500px ;
+    height: auto;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+input[type="number"]{
+    width:500px ;
+    height: auto;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+input[type="text"]{
+    width:500px ;
+    height: auto;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
 
+
+#dropdown{
+    width: 500px;
+}
 @media(min-width: 576px) {
     .container{
         max-width: 540px;
@@ -123,6 +148,8 @@ form{
       border: none;
       color: white;
       border-radius: 5px;
+      display:block;
+      margin: auto;
   }
 
   .submit-button:hover {
