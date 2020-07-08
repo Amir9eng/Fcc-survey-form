@@ -15,4 +15,8 @@
 - HTML
 - CSS
 ## Contact
-- You can contact me <amirmukhtarme@gmail.com
+- You can contact me at  <amirmukhtarme@gmail.com>
+
+## Addtional Info
+- This is one of the series of project for the @Codevillage-llc responsive web design 
+- This is not meant for production. It's for learning purpose only 
