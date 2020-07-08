@@ -9,12 +9,14 @@
  
  ## Prequisite
 - Your browser version must be up to date for a better experience
+
 ## Features
 -  A tribute page in remembrance of sheikh abubakar gumi
  
  ## Tech/framework used
 - HTML
 - CSS
+
 ## Contact
 - You can contact me at  <amirmukhtarme@gmail.com>
 
