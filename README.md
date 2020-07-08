@@ -15,4 +15,4 @@
 - HTML
 - CSS
 ## Contact
-- You can contact me < @amirmukhtarme@gmail.com >
+- You can contact me <amirmukhtarme@gmail.com
