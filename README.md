@@ -1,17 +1,18 @@
 # Fcc-survey-form
-**A implementation of a tribute page using HTML/CSS**
+**A implementation of a survey form using HTML/CSS**
 
 ## Description
- Tribute Page using HTML/CSS
+ Surveyform  using HTML/CSS
 
 ## Demo
- [demo](https://rawcdn.githack.com/Amir9eng/fcc-tributepage/346d366d11f515515dc7bf480250becfd3f8c837/index.html)
+ [demo](https://rawcdn.githack.com/Amir9eng/Fcc-survey-form/6df8fb11bc38a0e8605e574db4a7551cd02b6919/index.html)
  
  ## Prequisite
 - Your browser version must be up to date for a better experience
 
 ## Features
--  A tribute page in remembrance of sheikh abubakar gumi
+-  A survey form for Jamb
+-  Application form
  
  ## Tech/framework used
 - HTML
